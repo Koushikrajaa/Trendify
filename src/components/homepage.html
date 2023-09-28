@@ -1,0 +1,1030 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>Trendify</title>
+
+        <style>
+            .home{
+                margin: 0;
+                padding: 0;
+                font-family:'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+            }
+            nav{
+                margin-top: -8px;
+                margin-left: -8px;
+            }
+            ul{
+                width: 1309px;
+                list-style-type: none;
+                display: flex;
+                gap: 70px;
+                background-color: black;
+                color: white;
+                padding-top: 10px;
+                padding-bottom: 10px;
+                margin-top: -1px;
+            }
+            .n1{
+                width: 100px;
+                height: 50px;
+            }
+            .nav-items{
+                font-size: 20px;
+                margin-top: 14px;
+            }
+            .n2{
+                margin-left: 380px;
+            }
+            ul a{
+                position: relative;
+                text-decoration: none;
+                color: white;
+                transition: .5s;
+                cursor: pointer;
+            }
+            nav ul li a::after{
+                content: '';
+                position: absolute;
+                background-color: #E56D2E;
+                height: 3px;
+                width: 0;
+                left: 0 ;
+                bottom: -5px;
+                transition: .5s;
+            }
+            nav ul li a:hover::after{
+                width: 100%;
+                transition: .5s;
+            }
+            ul a:hover{
+                color: #E56D2E;
+                
+                transition: .5s;
+            }
+            video{
+                width: 1300px;
+                height: 300px;
+            }
+            h1{
+                position: relative;
+                left: 500px;
+                /* border: 1px solid; */
+                width: 200px;
+            }
+            .hot{
+                margin-left: 90px;
+                font-family:'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+                font-size: 28px;
+            }
+            .homeitem1{
+                border: 1px solid white;
+                width: 280px;
+                height: 430px;
+                padding-bottom: 5px;
+                border-radius: 10px;
+                transition: .5s;
+                scale: 1;
+                position: absolute;
+                top: 150px;
+                left: 50px;
+            }
+            .homeitem1 a{
+                text-decoration: none;
+            }
+            .view-img{
+                width: 280px;
+                height: 350px;
+                border-radius: 10px;
+            }
+            .brand{
+                text-align: center;
+                margin-top: 2px;
+                color: #B19975;
+                font-weight: 600;
+            }
+            .product-name{
+                text-align: center;
+                margin-top: -15px;
+                color: rgba(0, 0, 0, 0.7);
+            }
+            .bef-price{
+                color: rgba(0, 0, 0, 0.5);
+                text-decoration: line-through;
+                text-align: center;
+                margin-top: -15px;
+                margin-left: -50px;
+            }
+            .discount{
+                text-align: center;
+                color: rgba(0, 0, 0, 0.5);
+                margin-top: -35px;
+                margin-left: 65px;
+                font-size: 14px;
+            }
+            .price{
+                text-align: center;
+                margin-top: -14px;
+                color: rgba(0, 0, 0, 0.8);
+            }
+            .homeitem1:hover{
+                box-shadow: 1px 1px 10px;
+                scale: 1.02;
+                transition: .5s;
+            }
+            .homeitem2{
+                border: 1px solid white;
+                width: 280px;
+                height: 430px;
+                padding-bottom: 5px;
+                border-radius: 10px;
+                transition: .5s;
+                scale: 1;
+                position: absolute;
+                top: 150px;
+                left: 370px;
+            }
+            .homeitem2 a{
+                text-decoration: none;
+            }
+            .homeitem2:hover{
+                box-shadow: 1px 1px 10px;
+                scale: 1.02;
+                transition: .5s;
+            }
+            .homeitem3{
+                border: 1px solid white;
+                width: 280px;
+                height: 430px;
+                padding-bottom: 5px;
+                border-radius: 10px;
+                transition: .5s;
+                scale: 1;
+                position: absolute;
+                top: 150px;
+                left: 690px;
+            }
+            .homeitem3 a{
+                text-decoration: none;
+            }
+            .homeitem3:hover{
+                box-shadow: 1px 1px 10px;
+                scale: 1.02;
+                transition: .5s;
+            }
+            .homeitem4{
+                border: 1px solid white;
+                width: 280px;
+                height: 430px;
+                padding-bottom: 5px;
+                border-radius: 10px;
+                transition: .5s;
+                scale: 1;
+                position: absolute;
+                top: 150px;
+                left: 1010px;
+            }
+            .homeitem4 a{
+                text-decoration: none;
+            }
+            .homeitem4:hover{
+                box-shadow: 1px 1px 10px;
+                scale: 1.02;
+                transition: .5s;
+            }
+            .homeitem5{
+                border: 1px solid white;
+                width: 280px;
+                height: 430px;
+                padding-bottom: 5px;
+                border-radius: 10px;
+                transition: .5s;
+                scale: 1;
+                position: absolute;
+                top: 610px;
+                left: 50px;
+            }
+            .homeitem5 a{
+                text-decoration: none;
+            }
+            .homeitem5:hover{
+                box-shadow: 1px 1px 10px;
+                scale: 1.02;
+                transition: .5s;
+            }
+            .homeitem6{
+                border: 1px solid white;
+                width: 280px;
+                height: 430px;
+                padding-bottom: 5px;
+                border-radius: 10px;
+                transition: .5s;
+                scale: 1;
+                position: absolute;
+                top: 610px;
+                left: 370px;
+            }
+            .homeitem6 a{
+                text-decoration: none;
+            }
+            .homeitem6:hover{
+                box-shadow: 1px 1px 10px;
+                scale: 1.02;
+                transition: .5s;
+            }
+            .homeitem7{
+                border: 1px solid white;
+                width: 280px;
+                height: 430px;
+                padding-bottom: 5px;
+                border-radius: 10px;
+                transition: .5s;
+                scale: 1;
+                position: absolute;
+                top: 610px;
+                left: 690px;
+            }
+            .homeitem7 a{
+                text-decoration: none;
+            }
+            .homeitem7:hover{
+                box-shadow: 1px 1px 10px;
+                scale: 1.02;
+                transition: .5s;
+            }
+            .homeitem8{
+                border: 1px solid white;
+                width: 280px;
+                height: 430px;
+                padding-bottom: 5px;
+                border-radius: 10px;
+                transition: .5s;
+                scale: 1;
+                position: absolute;
+                top: 610px;
+                left: 1010px;
+            }
+            .homeitem8 a{
+                text-decoration: none;
+            }
+            .homeitem8:hover{
+                box-shadow: 1px 1px 10px;
+                scale: 1.02;
+                transition: .5s;
+            }
+            .homeitem9{
+                border: 1px solid white;
+                width: 280px;
+                height: 430px;
+                padding-bottom: 5px;
+                border-radius: 10px;
+                transition: .5s;
+                scale: 1;
+                position: absolute;
+                top: 1070px;
+                left: 50px;
+            }
+            .homeitem9 a{
+                text-decoration: none;
+            }
+            .homeitem9:hover{
+                box-shadow: 1px 1px 10px;
+                scale: 1.02;
+                transition: .5s;
+            }
+            .homeitem10{
+                border: 1px solid white;
+                width: 280px;
+                height: 430px;
+                padding-bottom: 5px;
+                border-radius: 10px;
+                transition: .5s;
+                scale: 1;
+                position: absolute;
+                top: 1070px;
+                left: 370px;
+            }
+            .homeitem10 a{
+                text-decoration: none;
+            }
+            .homeitem10:hover{
+                box-shadow: 1px 1px 10px;
+                scale: 1.02;
+                transition: .5s;
+            }
+            .homeitem11{
+                border: 1px solid white;
+                width: 280px;
+                height: 430px;
+                padding-bottom: 5px;
+                border-radius: 10px;
+                transition: .5s;
+                scale: 1;
+                position: absolute;
+                top: 1070px;
+                left: 690px;
+            }
+            .homeitem11 a{
+                text-decoration: none;
+            }
+            .homeitem11:hover{
+                box-shadow: 1px 1px 10px;
+                scale: 1.02;
+                transition: .5s;
+            }
+            .homeitem12{
+                border: 1px solid white;
+                width: 280px;
+                height: 430px;
+                padding-bottom: 5px;
+                border-radius: 10px;
+                transition: .5s;
+                scale: 1;
+                position: absolute;
+                top: 1070px;
+                left: 1010px;
+            }
+            .homeitem12 a{
+                text-decoration: none;
+            }
+            .homeitem12:hover{
+                box-shadow: 1px 1px 10px;
+                scale: 1.02;
+                transition: .5s;
+            }
+            .homeitem13{
+                border: 1px solid white;
+                width: 280px;
+                height: 430px;
+                padding-bottom: 5px;
+                border-radius: 10px;
+                transition: .5s;
+                scale: 1;
+                position: absolute;
+                top: 1530px;
+                left: 50px;
+            }
+            .homeitem13 a{
+                text-decoration: none;
+            }
+            .homeitem13:hover{
+                box-shadow: 1px 1px 10px;
+                scale: 1.02;
+                transition: .5s;
+            }
+            .homeitem14{
+                border: 1px solid white;
+                width: 280px;
+                height: 430px;
+                padding-bottom: 5px;
+                border-radius: 10px;
+                transition: .5s;
+                scale: 1;
+                position: absolute;
+                top: 1530px;
+                left: 370px;
+            }
+            .homeitem14 a{
+                text-decoration: none;
+            }
+            .homeitem14:hover{
+                box-shadow: 1px 1px 10px;
+                scale: 1.02;
+                transition: .5s;
+            }
+            .homeitem15{
+                border: 1px solid white;
+                width: 280px;
+                height: 430px;
+                padding-bottom: 5px;
+                border-radius: 10px;
+                transition: .5s;
+                scale: 1;
+                position: absolute;
+                top: 1530px;
+                left: 690px;
+            }
+            .homeitem15 a{
+                text-decoration: none;
+            }
+            .homeitem15:hover{
+                box-shadow: 1px 1px 10px;
+                scale: 1.02;
+                transition: .5s;
+            }
+            .homeitem16{
+                border: 1px solid white;
+                width: 280px;
+                height: 430px;
+                padding-bottom: 5px;
+                border-radius: 10px;
+                transition: .5s;
+                scale: 1;
+                position: absolute;
+                top: 1530px;
+                left: 1010px;
+            }
+            .homeitem16 a{
+                text-decoration: none;
+            }
+            .homeitem16:hover{
+                box-shadow: 1px 1px 10px;
+                scale: 1.02;
+                transition: .5s;
+            }
+            .homeitem17{
+                border: 1px solid white;
+                width: 280px;
+                height: 430px;
+                padding-bottom: 5px;
+                border-radius: 10px;
+                transition: .5s;
+                scale: 1;
+                position: absolute;
+                top: 1990px;
+                left: 50px;
+            }
+            .homeitem17 a{
+                text-decoration: none;
+            }
+            .homeitem17:hover{
+                box-shadow: 1px 1px 10px;
+                scale: 1.02;
+                transition: .5s;
+            }
+            .homeitem18{
+                border: 1px solid white;
+                width: 280px;
+                height: 430px;
+                padding-bottom: 5px;
+                border-radius: 10px;
+                transition: .5s;
+                scale: 1;
+                position: absolute;
+                top: 1990px;
+                left: 370px;
+            }
+            .homeitem18 a{
+                text-decoration: none;
+            }
+            .homeitem18:hover{
+                box-shadow: 1px 1px 10px;
+                scale: 1.02;
+                transition: .5s;
+            }
+            .homeitem19{
+                border: 1px solid white;
+                width: 280px;
+                height: 430px;
+                padding-bottom: 5px;
+                border-radius: 10px;
+                transition: .5s;
+                scale: 1;
+                position: absolute;
+                top: 1990px;
+                left: 690px;
+            }
+            .homeitem19 a{
+                text-decoration: none;
+            }
+            .homeitem19:hover{
+                box-shadow: 1px 1px 10px;
+                scale: 1.02;
+                transition: .5s;
+            }
+            .homeitem20{
+                border: 1px solid white;
+                width: 280px;
+                height: 430px;
+                padding-bottom: 5px;
+                border-radius: 10px;
+                transition: .5s;
+                scale: 1;
+                position: absolute;
+                top: 1990px;
+                left: 1010px;
+            }
+            .homeitem20 a{
+                text-decoration: none;
+            }
+            .homeitem20:hover{
+                box-shadow: 1px 1px 10px;
+                scale: 1.02;
+                transition: .5s;
+            }
+            .homeitem21{
+                border: 1px solid white;
+                width: 280px;
+                height: 430px;
+                padding-bottom: 5px;
+                border-radius: 10px;
+                transition: .5s;
+                scale: 1;
+                position: absolute;
+                top: 2450px;
+                left: 50px;
+            }
+            .homeitem21 a{
+                text-decoration: none;
+            }
+            .homeitem21:hover{
+                box-shadow: 1px 1px 10px;
+                scale: 1.02;
+                transition: .5s;
+            }
+            .homeitem22{
+                border: 1px solid white;
+                width: 280px;
+                height: 430px;
+                padding-bottom: 5px;
+                border-radius: 10px;
+                transition: .5s;
+                scale: 1;
+                position: absolute;
+                top: 2450px;
+                left: 370px;
+            }
+            .homeitem22 a{
+                text-decoration: none;
+            }
+            .homeitem22:hover{
+                box-shadow: 1px 1px 10px;
+                scale: 1.02;
+                transition: .5s;
+            }
+            .homeitem23{
+                border: 1px solid white;
+                width: 280px;
+                height: 430px;
+                padding-bottom: 5px;
+                border-radius: 10px;
+                transition: .5s;
+                scale: 1;
+                position: absolute;
+                top: 2450px;
+                left: 690px;
+            }
+            .homeitem23 a{
+                text-decoration: none;
+            }
+            .homeitem23:hover{
+                box-shadow: 1px 1px 10px;
+                scale: 1.02;
+                transition: .5s;
+            }
+            .homeitem24{
+                border: 1px solid white;
+                width: 280px;
+                height: 430px;
+                padding-bottom: 5px;
+                border-radius: 10px;
+                transition: .5s;
+                scale: 1;
+                position: absolute;
+                top: 2450px;
+                left: 1010px;
+            }
+            .homeitem24 a{
+                text-decoration: none;
+            }
+            .homeitem24:hover{
+                box-shadow: 1px 1px 10px;
+                scale: 1.02;
+                transition: .5s;
+            }
+            .homeitem25{
+                border: 1px solid white;
+                width: 280px;
+                height: 430px;
+                padding-bottom: 5px;
+                border-radius: 10px;
+                transition: .5s;
+                scale: 1;
+                position: absolute;
+                top: 2910px;
+                left: 50px;
+            }
+            .homeitem25 a{
+                text-decoration: none;
+            }
+            .homeitem25:hover{
+                box-shadow: 1px 1px 10px;
+                scale: 1.02;
+                transition: .5s;
+            }
+            .homeitem26{
+                border: 1px solid white;
+                width: 280px;
+                height: 430px;
+                padding-bottom: 5px;
+                border-radius: 10px;
+                transition: .5s;
+                scale: 1;
+                position: absolute;
+                top: 2910px;
+                left: 370px;
+            }
+            .homeitem26 a{
+                text-decoration: none;
+            }
+            .homeitem26:hover{
+                box-shadow: 1px 1px 10px;
+                scale: 1.02;
+                transition: .5s;
+            }
+            .homeitem27{
+                border: 1px solid white;
+                width: 280px;
+                height: 430px;
+                padding-bottom: 5px;
+                border-radius: 10px;
+                transition: .5s;
+                scale: 1;
+                position: absolute;
+                top: 2910px;
+                left: 690px;
+            }
+            .homeitem27 a{
+                text-decoration: none;
+            }
+            .homeitem27:hover{
+                box-shadow: 1px 1px 10px;
+                scale: 1.02;
+                transition: .5s;
+            }
+            .homeitem28{
+                border: 1px solid white;
+                width: 280px;
+                height: 430px;
+                padding-bottom: 5px;
+                border-radius: 10px;
+                transition: .5s;
+                scale: 1;
+                position: absolute;
+                top: 2910px;
+                left: 1010px;
+            }
+            .homeitem28 a{
+                text-decoration: none;
+            }
+            .homeitem28:hover{
+                box-shadow: 1px 1px 10px;
+                scale: 1.02;
+                transition: .5s;
+            }
+            .footer{
+                background-color: black;
+                position: absolute;
+                top: 3400px;
+                width: 99%;
+                height:160px;
+            }
+            .foo-img{
+                width: 200px;
+                height: 100px;
+                margin-top: 30px;
+                margin-left: 70px;
+            }
+            .cato{
+                display: flex;
+                gap: 100px;
+                width: 500px;
+                margin-left: 330px;
+                margin-top: -100px;
+                font-size: 20px;
+            }
+            .mail{
+                margin-left: 640px;
+                color: white;
+                font-size: 18px;
+            }
+        </style>
+    </head>
+
+    <body>
+        <div class="home">
+            <nav>
+                <ul>
+                    <a href="#"><img src="tr_logo_bg.png" alt="logo" class="n1"></a>
+                    <li class="nav-items n2"><a href="#">Men</a></li>
+                    <li class="nav-items n3"><a href="#">Women</a></li>
+                    <li class="nav-items n4"><a href="#">Kids</a></li>
+                    <li class="nav-items n5"><a href="#">Sunglasses</a></li>
+                    <li class="nav-items n6"><a href="#">Watches</a></li>
+                    <li class="nav-items n7"><a href="#">Shoes</a></li>
+                </ul>
+            </nav>
+
+            <h1 class="hot">Hot Deals </h1>
+            <div class="homeitem1">
+                <a href="#">
+                    <img src="fm2-1.jpeg" alt="fm" class="view-img">
+                    <p class="brand">Roadster</p>
+                    <p class="product-name">Slim Fit Formal Blue Shirt</p>
+                    <p class="bef-price">Rs.1499</p>
+                    <p class="discount">(50% Off)</p>
+                    <h4 class="price">Rs.749</h4>
+                </a>
+            </div>
+            <div class="homeitem2">
+                <a href="#">
+                    <img src="cm3-1.jpeg" alt="fm" class="view-img">
+                    <p class="brand">The Bear House</p>
+                    <p class="product-name">Slim Fit Casual White Shirt</p>
+                    <p class="bef-price">Rs.1999</p>
+                    <p class="discount">(50% Off)</p>
+                    <h4 class="price">Rs.999</h4>
+                </a>
+            </div>
+            <div class="homeitem3">
+                <a href="#">
+                    <img src="cm4-1.jpeg" alt="fm" class="view-img">
+                    <p class="brand">Roadster</p>
+                    <p class="product-name">Men Navy & Grey Checked Casual Shirt</p>
+                    <p class="bef-price">Rs.1499</p>
+                    <p class="discount">(65% Off)</p>
+                    <h4 class="price">Rs.524</h4>
+                </a>
+            </div>
+            <div class="homeitem4">
+                <a href="#">
+                    <img src="sm1-1.jpeg" alt="fm" class="view-img">
+                    <p class="brand">HIGHLANDER</p>
+                    <p class="product-name">Men Navy Blue Solid Sweatshirt </p>
+                    <p class="bef-price">Rs.1199</p>
+                    <p class="discount">(60% Off)</p>
+                    <h4 class="price">Rs.719</h4>
+                </a>
+            </div>
+            <div class="homeitem5">
+                <a href="#">
+                    <img src="cm7-1.jpeg" alt="fm" class="view-img">
+                    <p class="brand">Highstar</p>
+                    <p class="product-name">Mens Washed Denim Jacket</p>
+                    <p class="bef-price">Rs.2299</p>
+                    <p class="discount">(58% Off)</p>
+                    <h4 class="price">Rs.999</h4>
+                </a>
+            </div>
+            <div class="homeitem6">
+                <a href="#">
+                    <img src="cm6-1.jpeg" alt="fm" class="view-img">
+                    <p class="brand">HERE&NOW</p>
+                    <p class="product-name">Men Navy Blue Slim Fit Casual
+                        Shirt</p>
+                    <p class="bef-price">Rs.1699</p>
+                    <p class="discount">(67% Off)</p>
+                    <h4 class="price">Rs.560</h4>
+                </a>
+            </div>
+            <div class="homeitem7">
+                <a href="#">
+                    <img src="fm3-1.jpeg" alt="fm" class="view-img">
+                    <p class="brand">FUBAR</p>
+                    <p class="product-name">Mandarin Collar Cotton Casual
+                        Shirt</p>
+                    <p class="bef-price">Rs.1999</p>
+                    <p class="discount">(75% Off)</p>
+                    <h4 class="price">Rs.459</h4>
+                </a>
+            </div>
+            <div class="homeitem8">
+                <a href="#">
+                    <img src="cm5-1.jpeg" alt="fm" class="view-img">
+                    <p class="brand">HIGHLANDER</p>
+                    <p class="product-name">Men Black & White Printed Casual
+                        Shirt</p>
+                    <p class="bef-price">Rs.1049</p>
+                    <p class="discount">(59% Off)</p>
+                    <h4 class="price">Rs.430</h4>
+                </a>
+            </div>
+            <div class="homeitem9">
+                <a href="#">
+                    <img src="wc1-1.jpeg" alt="fm" class="view-img">
+                    <p class="brand">Vishudh</p>
+                    <p class="product-name">Women Maroon & White Striped
+                        Kurta</p>
+                    <p class="bef-price">Rs.1099</p>
+                    <p class="discount">(66% Off)</p>
+                    <h4 class="price">Rs.373</h4>
+                </a>
+            </div>
+            <div class="homeitem10">
+                <a href="#">
+                    <img src="wc2-1.jpeg" alt="fm" class="view-img">
+                    <p class="brand">MIRCHI FASHION</p>
+                    <p class="product-name">Sea Green & Gold-Toned Zari
+                        Saree</p>
+                    <p class="bef-price">Rs.2999</p>
+                    <p class="discount">(72% Off)</p>
+                    <h4 class="price">Rs.839</h4>
+                </a>
+            </div>
+            <div class="homeitem11">
+                <a href="#">
+                    <img src="wc4-1.jpeg" alt="fm" class="view-img">
+                    <p class="brand">HERE&NOW</p>
+                    <p class="product-name">Women Yellow & Green Cotton
+                        Printed
+                        Kurta</p>
+                    <p class="bef-price">Rs.1099</p>
+                    <p class="discount">(65% Off)</p>
+                    <h4 class="price">Rs.384</h4>
+                </a>
+            </div>
+            <div class="homeitem12">
+                <a href="#">
+                    <img src="wc3-1.jpeg" alt="fm" class="view-img">
+                    <p class="brand">MIRCHI FASHION</p>
+                    <p class="product-name">Pink & Blue Floral Saree</p>
+                    <p class="bef-price">Rs.2799</p>
+                    <p class="discount">(76% Off)</p>
+                    <h4 class="price">Rs.671</h4>
+                </a>
+            </div>
+            <div class="homeitem13">
+                <a href="#">
+                    <img src="wc5-1.jpeg" alt="fm" class="view-img">
+                    <p class="brand">Vishudh</p>
+                    <p class="product-name">Women Blue & White Printed Kurta</p>
+                    <p class="bef-price">Rs.1149</p>
+                    <p class="discount">(37% Off)</p>
+                    <h4 class="price">Rs.723</h4>
+                </a>
+            </div>
+            <div class="homeitem14">
+                <a href="#">
+                    <img src="wc6-4.jpeg" alt="fm" class="view-img">
+                    <p class="brand">Nayo</p>
+                    <p class="product-name">Women Black & White Printed
+                        Kurta</p>
+                    <p class="bef-price">Rs.1099</p>
+                    <p class="discount">(40% Off)</p>
+                    <h4 class="price">Rs.659</h4>
+                </a>
+            </div>
+            <div class="homeitem15">
+                <a href="#">
+                    <img src="wc8-1.jpeg" alt="fm" class="view-img">
+                    <p class="brand">Libas</p>
+                    <p class="product-name">Women Peach & Pink Floral Print
+                        Kurta</p>
+                    <p class="bef-price">Rs.1299</p>
+                    <p class="discount">(65% Off)</p>
+                    <h4 class="price">Rs.454</h4>
+                </a>
+            </div>
+            <div class="homeitem16">
+                <a href="#">
+                    <img src="wc7-2.jpeg" alt="fm" class="view-img">
+                    <p class="brand">Anouk</p>
+                    <p class="product-name">Band Collar Floral Printed Kurta</p>
+                    <p class="bef-price">Rs.1099</p>
+                    <p class="discount">(65% Off)</p>
+                    <h4 class="price">Rs.384</h4>
+                </a>
+            </div>
+            <div class="homeitem17">
+                <a href="#">
+                    <img src="kid1-1.jpeg" alt="fm" class="view-img">
+                    <p class="brand">A.T.U.N.</p>
+                    <p class="product-name">ATUN Blue Striped Shirt Dress</p>
+                    <p class="bef-price">Rs.2499</p>
+                    <p class="discount">(63% Off)</p>
+                    <h4 class="price">Rs.924</h4>
+                </a>
+            </div>
+            <div class="homeitem18">
+                <a href="#">
+                    <img src="kid2-1.jpeg" alt="fm" class="view-img">
+                    <p class="brand">pspeaches</p>
+                    <p class="product-name">Girls Striped A-Line Midi Cotton
+                        Dress</p>
+                    <p class="bef-price">Rs.4282</p>
+                    <p class="discount">(70% Off)</p>
+                    <h4 class="price">Rs.1284</h4>
+                </a>
+            </div>
+            <div class="homeitem19">
+                <a href="#">
+                    <img src="kid3-1.jpeg" alt="fm" class="view-img">
+                    <p class="brand">Sonata</p>
+                    <p class="product-name">Volt Men Black Analogue watch</p>
+                    <p class="bef-price">Rs.999</p>
+                    <p class="discount">(30% Off)</p>
+                    <h4 class="price">Rs.699</h4>
+                </a>
+            </div>
+            <div class="homeitem20">
+                <a href="#">
+                    <img src="kid4-1.jpeg" alt="fm" class="view-img">
+                    <p class="brand">FASHION DREAM</p>
+                    <p class="product-name">Girls Black and Golden Ethnic
+                        Maxi
+                        Dress</p>
+                    <p class="bef-price">Rs.3999</p>
+                    <p class="discount">(63% Off)</p>
+                    <h4 class="price">Rs.1479</h4>
+                </a>
+            </div>
+            <div class="homeitem21">
+                <a href="#">
+                    <img src="sun1-1.jpeg" alt="fm" class="view-img">
+                    <p class="brand">Carlton London</p>
+                    <p class="product-name">Men Polarised & UV Protected
+                        Sunglasses</p>
+                    <p class="bef-price">Rs.4145</p>
+                    <p class="discount">(62% Off)</p>
+                    <h4 class="price">Rs.1575</h4>
+                </a>
+            </div>
+            <div class="homeitem22">
+                <a href="#">
+                    <img src="sun2-1.jpeg" alt="fm" class="view-img">
+                    <p class="brand">Voyage</p>
+                    <p class="product-name">Polarised And UV Protected Round
+                        Sunglasses</p>
+                    <p class="bef-price">Rs.2999</p>
+                    <p class="discount">(48% Off)</p>
+                    <h4 class="price">Rs.1699</h4>
+                </a>
+            </div>
+            <div class="homeitem23">
+                <a href="#">
+                    <img src="wat1-1.jpeg" alt="fm" class="view-img">
+                    <p class="brand">Sonata</p>
+                    <p class="product-name">Volt Men Black Analogue watch</p>
+                    <p class="bef-price">Rs.999</p>
+                    <p class="discount">(30% Off)</p>
+                    <h4 class="price">Rs.699</h4>
+                </a>
+            </div>
+            <div class="homeitem24">
+                <a href="#">
+                    <img src="wat2-1.jpeg" alt="fm" class="view-img">
+                    <p class="brand">Titan</p>
+                    <p class="product-name">Titan Men Black Dial Watch</p>
+                    <p class="bef-price">Rs.1999</p>
+                    <p class="discount">(10% Off)</p>
+                    <h4 class="price">Rs.1899</h4>
+                </a>
+            </div>
+            <div class="homeitem25">
+                <a href="#">
+                    <img src="sh1-1.jpeg" alt="fm" class="view-img">
+                    <p class="brand">Mast & Harbour</p>
+                    <p class="product-name">Men White Casual Sneakers</p>
+                    <p class="bef-price">Rs.1999</p>
+                    <p class="discount">(71% Off)</p>
+                    <h4 class="price">Rs.579</h4>
+                </a>
+            </div>
+            <div class="homeitem26">
+                <a href="#">
+                    <img src="sh2-1.jpeg" alt="fm" class="view-img">
+                    <p class="brand">Woakers</p>
+                    <p class="product-name">Men Blue Colourblocked Sneakers</p>
+                    <p class="bef-price">Rs.3995</p>
+                    <p class="discount">(82% Off)</p>
+                    <h4 class="price">Rs.719</h4>
+                </a>
+            </div>
+            <div class="homeitem27">
+                <a href="#">
+                    <img src="sh3-1.jpeg" alt="fm" class="view-img">
+                    <p class="brand">Sir Corbett</p>
+                    <p class="product-name">Men Black Solid Slip On Formal
+                        Shoes</p>
+                    <p class="bef-price">Rs.2329</p>
+                    <p class="discount">(72% Off)</p>
+                    <h4 class="price">Rs.652</h4>
+                </a>
+            </div>
+            <div class="homeitem28">
+                <a href="#">
+                    <img src="sh4-1.jpeg" alt="fm" class="view-img">
+                    <p class="brand">CLYMB</p>
+                    <p class="product-name">Men Non-Marking Running Shoes</p>
+                    <p class="bef-price">Rs.999</p>
+                    <p class="discount">(46% Off)</p>
+                    <h4 class="price">Rs.539</h4>
+                </a>
+            </div>
+            <div class="footer">
+                <img src="tr_logo_bg.png" alt="logo" class="foo-img">
+
+                <ul class="cato">
+                    <li class="cat-a c2"><a href="#">Men</a></li>
+                    <li class="cat-a c3"><a href="#">Women</a></li>
+                    <li class="cat-a c4"><a href="#">Kids</a></li>
+                    <li class="cat-a c5"><a href="#">Sunglasses</a></li>
+                    <li class="cat-a c6"><a href="#">Watches</a></li>
+                    <li class="cat-a c7"><a href="#">Shoes</a></li>
+                </ul>
+                <p class="mail">Contact : koushikrajaa7@gmail.com</p>
+            </div>
+        </div>
+    </body>
+</html>

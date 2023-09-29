@@ -52,15 +52,16 @@ import Shoe1 from "./components/Shoe-1"
 import Shoe2 from "./components/Shoe-2"
 import Shoe3 from "./components/Shoe-3"
 import Shoe4 from "./components/Shoe-4"
-import { BrowserRouter as Router, Routes, Route } from "react-router-dom";
+import { BrowserRouter as Router, Routes, Route, BrowserRouter } from "react-router-dom";
 import { useState } from 'react';
 
 function App() {
   return (
     <div className="App">
+      
       <Router>
         <Routes>
-          <Route path="/" element={<Login/>}/>
+          <Route path="/Trendify" element={<Login/>}/>
           <Route path="/signup" element={<Signup/>}/>
           <Route path="/home" element={<Home/>}/>
           <Route path="/men" element={<Men/>}/>
@@ -115,6 +116,7 @@ function App() {
           <Route path="/shoe-4" element={<Shoe4/>}/>
         </Routes>
       </Router>
+      
     </div>
   );
 }

@@ -57,7 +57,7 @@ function Login() {
 
         </form>
 
-        <p class="r1">Already have an account? <Link to="/" >Login</Link> </p>
+        <p class="r1">Already have an account? <Link to="/Trendify" >Login</Link> </p>
 
        </div>
 

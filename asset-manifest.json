@@ -1,7 +1,7 @@
 {
   "files": {
     "main.css": "/Trendify/static/css/main.1e037a0a.css",
-    "main.js": "/Trendify/static/js/main.4a787a5a.js",
+    "main.js": "/Trendify/static/js/main.84aed970.js",
     "static/js/787.142da1d4.chunk.js": "/Trendify/static/js/787.142da1d4.chunk.js",
     "static/media/sale_banner5.jpg": "/Trendify/static/media/sale_banner5.1f821595c6777b39307f.jpg",
     "static/media/sale_banner6.jpg": "/Trendify/static/media/sale_banner6.d66e286a8b808bdcfa5c.jpg",
@@ -203,11 +203,11 @@
     "static/media/sh1-4.jpeg": "/Trendify/static/media/sh1-4.8b571b8a16a38e5560bc.jpeg",
     "index.html": "/Trendify/index.html",
     "main.1e037a0a.css.map": "/Trendify/static/css/main.1e037a0a.css.map",
-    "main.4a787a5a.js.map": "/Trendify/static/js/main.4a787a5a.js.map",
+    "main.84aed970.js.map": "/Trendify/static/js/main.84aed970.js.map",
     "787.142da1d4.chunk.js.map": "/Trendify/static/js/787.142da1d4.chunk.js.map"
   },
   "entrypoints": [
     "static/css/main.1e037a0a.css",
-    "static/js/main.4a787a5a.js"
+    "static/js/main.84aed970.js"
   ]
 }

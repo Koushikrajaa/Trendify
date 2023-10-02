@@ -16,7 +16,7 @@ function Login() {
 
         try{
 
-            await axios.post("http://localhost:8000/Trendify",{
+            await axios.post("http://localhost:8000/",{
                 email,password
             })
             .then(res=>{

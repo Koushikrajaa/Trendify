@@ -16,11 +16,11 @@ const { type } = require("@testing-library/user-event/dist/type")
 app.use(express.static("./src/components"))
 app.use(bodyparser.urlencoded({extended:true}))
 
-app.get("/",cors(),(req,res)=>{
+app.get("/Trendify",cors(),(req,res)=>{
     
 })
 
-app.post("/",async(req,res)=>{
+app.post("/Trendify",async(req,res)=>{
     const{email,password}=req.body
 
     try{
